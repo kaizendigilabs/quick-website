@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: var(--ds-font-size-base);
+  font-size: var(--ds-fs-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -16,8 +16,8 @@ html {
 body {
   font-family: var(--ds-font-sans);
   line-height: 1.25;
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  background-color: var(--ds-primary-50);
+  color: var(--ds-grey-900);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--ds-primary-700);
 }
 
 button {
@@ -41,7 +41,6 @@ button {
 ol,
 ul {
   list-style: none;
-  padding-left: 0;
 }
 
 img,
@@ -81,8 +80,4 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-section {
-  margin-bottom: 3rem;
 }
