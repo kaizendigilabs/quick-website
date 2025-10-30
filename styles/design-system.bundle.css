@@ -1,3 +1,76 @@
 @import url('./foundation/tokens.css');
 @import url('./foundation/base.css');
 @import url('./foundation/typography.css');
+
+/* ===== Dashboard tokenized helpers (map to design tokens) ===== */
+.navbar-ds { background: var(--ds-white-100); border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200); height: 64px; overflow: hidden; }
+.navbar-ds > .container-xxl { display: flex; align-items: center; gap: 12px; }
+.brand-img-32 { height: 32px; }
+.btn-icon { border-radius: var(--ds-radius-md); }
+
+.chips { gap: 8px; }
+.chip { padding: 10px 14px; border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800); font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size); display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.chip-active { background: linear-gradient(180deg, var(--ds-primary-400), var(--ds-primary-600)); color: var(--ds-white-100); border: none; }
+
+.bell-container { width: 48px; height: 48px; border-radius: var(--ds-radius-pill); background: var(--ds-grey-50); box-shadow: var(--ds-shadow-100); position: relative; display: flex; align-items: center; justify-content: center; }
+.bell-dot { position: absolute; top: 6px; right: 6px; width: 12px; height: 12px; background: var(--ds-red-500); border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill); }
+
+.user-pill { position: relative; display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--ds-primary-50); border-radius: var(--ds-radius-pill); }
+.avatar-36 { width: 36px; height: 36px; border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-pill); }
+.status-dot { position: absolute; bottom: -1px; right: -1px; width: 10px; height: 10px; background: var(--ds-green-500); border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill); }
+
+.offcanvas-ds { width: 85vw; background: var(--ds-white-100); border-right: 1px solid var(--ds-grey-200); border-radius: 0 var(--ds-radius-lg) var(--ds-radius-lg) 0; box-shadow: var(--ds-shadow-400); }
+.sidebar-link { height: 56px; padding: 10px 14px; border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800); display: flex; align-items: center; gap: 8px; font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size); text-decoration: none; }
+.sidebar-link-active { background: linear-gradient(180deg, var(--ds-primary-400), var(--ds-primary-600)); color: var(--ds-white-100); border: none; }
+
+.header-card { background: var(--ds-white-100); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200); }
+.card-surface { background: var(--ds-white-100); border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200); }
+
+.video-16x9 { aspect-ratio: 16/9; }
+.play-btn { width: 64px; height: 64px; background: var(--ds-white-100); border-radius: var(--ds-radius-pill); box-shadow: var(--ds-shadow-200); }
+
+.list-item { display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md); }
+.list-title { color: var(--ds-grey-800); font-weight: var(--ds-fw-semibold); }
+.list-meta { color: var(--ds-grey-500); font-size: var(--ds-caption-1-size); display: flex; gap: 12px; }
+
+.pretest-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--ds-grey-100); border-radius: var(--ds-radius-md); }
+.badge-score { padding: 0 12px; background: var(--ds-primary-100); color: var(--ds-primary-700); border-radius: var(--ds-radius-pill); }
+
+.chart { height: 180px; display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; }
+.bar-strong { height: 75%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-500), var(--ds-primary-200)); }
+.bar-mid { height: 40%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100)); }
+.bar-mid2 { height: 45%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100)); }
+.bar-mid3 { height: 50%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100)); }
+.bar-mid4 { height: 55%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100)); }
+.bar-mid5 { height: 60%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100)); }
+.bar-mid6 { height: 65%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100)); }
+.chart-dates { color: var(--ds-grey-500); font-size: var(--ds-caption-1-size); }
+
+.info-divider { color: var(--ds-grey-400); }
+.info-card { background: var(--ds-grey-100); border-radius: var(--ds-radius-md); }
+
+/* Container override to 1440px on ≥1400px */
+@media (min-width: 1400px) {
+  .container-xxl, .container { max-width: 1440px; }
+}
+
+/* Offcanvas backdrop blur */
+.offcanvas-backdrop.show { filter: blur(6px); background: rgba(19, 25, 39, 0.2); }
+
+/* Dropdown pill button for filters */
+.dropdown-pill { border: 1px solid var(--ds-grey-200) !important; background: var(--ds-grey-50) !important; color: var(--ds-grey-800) !important; border-radius: var(--ds-radius-pill) !important; padding: 4px 12px !important; }
+.dropdown-menu-token { border: 1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md); box-shadow: var(--ds-shadow-200); }
+.dropdown-menu-token .dropdown-item { color: var(--ds-grey-800); }
+.dropdown-menu-token .dropdown-item.active, .dropdown-menu-token .dropdown-item:active { background: var(--ds-primary-100); color: var(--ds-primary-700); }
+
+/* Token text helpers */
+.text-ds-grey-900 { color: var(--ds-grey-900); }
+.text-ds-grey-800 { color: var(--ds-grey-800); }
+.text-ds-grey-700 { color: var(--ds-grey-700); }
+.text-ds-grey-600 { color: var(--ds-grey-600); }
+.text-ds-grey-500 { color: var(--ds-grey-500); }
+.link-ds-primary-700 { color: var(--ds-primary-700); text-decoration: none; }
+.link-ds-primary-700:hover { color: var(--ds-primary-600); }
+
+/* Small pill neutral */
+.pill-muted { border: 1px solid var(--ds-grey-200); background: var(--ds-grey-50); border-radius: var(--ds-radius-pill); padding: 2px 12px; }
