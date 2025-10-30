@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Website Design System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/iconoir@6.7.0/css/iconoir.css" />
+    <link rel="stylesheet" href="styles/design-system.bundle.css" />
+  </head>
+  <body>
+    <div class="ds-container">
+      <header class="ds-section">
+        <div class="ds-section__header">
+          <div>
+            <h1 class="ds-h3 mb-2">Quick Website Design System</h1>
+            <p class="lead mb-0">Bootstrap 5 + Iconoir implementation of the modular CSS architecture.</p>
+          </div>
+          <div class="u-inline" style="--u-inline-gap:0.75rem;">
+            <button class="btn ds-action ds-action--solid ds-action--sm">Primary</button>
+            <button class="btn ds-action ds-action--outline ds-action--sm">Secondary</button>
+          </div>
+        </div>
+        <div class="ds-breadcrumb" aria-label="breadcrumb">
+          <span class="ds-breadcrumb__item">Home</span>
+          <span class="ds-breadcrumb__item">Design System</span>
+          <span class="ds-breadcrumb__item" aria-current="page">Overview</span>
+        </div>
+      </header>
+
+      <section class="ds-section" id="actions">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Actions</h2>
+          <span class="ds-status" data-tone="soft">Core</span>
+        </div>
+        <div class="ds-grid" data-columns="2">
+          <div>
+            <h3 class="ds-subtitle-2">Button Variants</h3>
+            <div class="u-stack" style="--u-stack-gap:0.75rem;">
+              <div class="u-inline">
+                <button class="btn ds-action ds-action--solid ds-action--lg"><span class="ds-icon iconoir-flash"></span>Solid Large</button>
+                <button class="btn ds-action ds-action--outline ds-action--lg">Outline Large</button>
+                <button class="btn ds-action ds-action--ghost ds-action--lg">Ghost Large</button>
+              </div>
+              <div class="u-inline">
+                <button class="btn ds-action ds-action--solid ds-action--sm">Solid</button>
+                <button class="btn ds-action ds-action--outline ds-action--sm">Outline</button>
+                <button class="btn ds-action ds-action--ghost ds-action--sm">Ghost</button>
+                <button class="btn ds-action ds-action--solid ds-action--xs ds-action--icon-only"><span class="ds-icon iconoir-heart"></span></button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="ds-subtitle-2">Grouped &amp; Segmented</h3>
+            <div class="u-stack" style="--u-stack-gap:1rem;">
+              <div class="ds-action-group">
+                <button class="btn ds-action ds-action--outline ds-action--sm">Day</button>
+                <button class="btn ds-action ds-action--outline ds-action--sm is-selected">Week</button>
+                <button class="btn ds-action ds-action--outline ds-action--sm">Month</button>
+              </div>
+              <nav class="ds-tabs">
+                <button class="btn ds-action is-selected">Overview</button>
+                <button class="btn ds-action">Sessions</button>
+                <button class="btn ds-action">Revenue</button>
+              </nav>
+              <div class="ds-page-control">
+                <button class="btn ds-action ds-action--ghost ds-action--sm ds-action--icon-only" aria-label="Previous"><span class="ds-icon iconoir-nav-arrow-left"></span></button>
+                <nav class="ds-pagination">
+                  <button class="btn ds-action">1</button>
+                  <button class="btn ds-action is-selected">2</button>
+                  <button class="btn ds-action">3</button>
+                  <button class="btn ds-action">...</button>
+                  <button class="btn ds-action">8</button>
+                </nav>
+                <button class="btn ds-action ds-action--ghost ds-action--sm ds-action--icon-only" aria-label="Next"><span class="ds-icon iconoir-nav-arrow-right"></span></button>
+                <span class="ds-page-control__meta">Page 2 of 8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="forms">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Inputs &amp; Choices</h2>
+          <span class="ds-status" data-tone="soft" data-variant="info">Form</span>
+        </div>
+        <div class="ds-grid" data-columns="2">
+          <div class="u-stack" style="--u-stack-gap:1.5rem;">
+            <div class="ds-field">
+              <label class="ds-field__label" for="email">Email address</label>
+              <div class="ds-control">
+                <span class="ds-control__leading"><i class="iconoir-mail"></i></span>
+                <input class="ds-control__input" type="email" id="email" placeholder="name@example.com" />
+                <span class="ds-control__trailing"><i class="iconoir-check-circle"></i></span>
+              </div>
+              <p class="ds-field__helper">We'll never share your email.</p>
+            </div>
+            <div class="ds-field is-warning">
+              <label class="ds-field__label" for="company">Company</label>
+              <div class="ds-control ds-control--select">
+                <span class="ds-control__leading"><i class="iconoir-buildings"></i></span>
+                <select class="form-select border-0 ps-0 ds-control__input" id="company">
+                  <option selected>Select company</option>
+                  <option>Acme Inc.</option>
+                  <option>Globex</option>
+                  <option>Initech</option>
+                </select>
+                <span class="ds-control__trailing"><i class="iconoir-nav-arrow-down"></i></span>
+              </div>
+              <p class="ds-field__helper">Required to assign billing.</p>
+            </div>
+            <div class="ds-field is-danger">
+              <label class="ds-field__label" for="message">Message</label>
+              <div class="ds-control ds-control--lg">
+                <textarea class="ds-control__input" id="message" placeholder="Describe your request"></textarea>
+              </div>
+              <p class="ds-field__helper">Message must be at least 60 characters.</p>
+            </div>
+          </div>
+          <div class="u-stack" style="--u-stack-gap:1.5rem;">
+            <div class="u-stack" style="--u-stack-gap:0.75rem;">
+              <span class="ds-label">Checkboxes</span>
+              <label class="ds-choice">
+                <input type="checkbox" checked />
+                <span class="ds-choice__control"></span>
+                Daily summary emails
+              </label>
+              <label class="ds-choice">
+                <input type="checkbox" />
+                <span class="ds-choice__control"></span>
+                Weekly performance recap
+              </label>
+              <label class="ds-choice is-disabled">
+                <input type="checkbox" disabled />
+                <span class="ds-choice__control"></span>
+                Quarterly updates (coming soon)
+              </label>
+            </div>
+            <div class="u-stack" style="--u-stack-gap:0.75rem;">
+              <span class="ds-label">Radios</span>
+              <label class="ds-choice" data-variant="radio">
+                <input type="radio" name="plan" checked />
+                <span class="ds-choice__control"></span>
+                Starter Plan
+              </label>
+              <label class="ds-choice" data-variant="radio">
+                <input type="radio" name="plan" />
+                <span class="ds-choice__control"></span>
+                Growth Plan
+              </label>
+              <label class="ds-choice is-disabled" data-variant="radio">
+                <input type="radio" name="plan" disabled />
+                <span class="ds-choice__control"></span>
+                Enterprise (Contact us)
+              </label>
+            </div>
+            <label class="ds-toggle">
+              <input type="checkbox" checked />
+              <span class="ds-toggle__track"><span class="ds-toggle__thumb"></span></span>
+              Enable 2FA protection
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="feedback">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Feedback</h2>
+          <span class="ds-status" data-tone="soft" data-variant="success">Status</span>
+        </div>
+        <div class="ds-grid" data-columns="3">
+          <div class="u-stack" style="--u-stack-gap:0.75rem;">
+            <h3 class="ds-subtitle-2">Badges</h3>
+            <div class="u-cluster" style="--u-cluster-gap:0.5rem;">
+              <span class="ds-badge" data-tone="filled">Default</span>
+              <span class="ds-badge" data-tone="outline">Outline</span>
+              <span class="ds-badge" data-tone="soft">Soft</span>
+              <span class="ds-badge" data-tone="filled" data-variant="success">Success</span>
+              <span class="ds-badge" data-tone="filled" data-variant="warning">Warning</span>
+              <span class="ds-badge" data-tone="filled" data-variant="danger">Error</span>
+            </div>
+          </div>
+          <div class="u-stack" style="--u-stack-gap:1rem;">
+            <h3 class="ds-subtitle-2">Alerts</h3>
+            <article class="ds-alert" data-variant="info">
+              <span class="ds-icon iconoir-info-circle"></span>
+              <div>
+                <div class="ds-alert__title">Heads up!</div>
+                <p class="ds-alert__description">We detected new sign-ins from a device in Singapore.</p>
+              </div>
+              <button class="btn ds-action ds-action--ghost ds-action--xs">Review</button>
+            </article>
+            <article class="ds-alert" data-variant="danger">
+              <span class="ds-icon iconoir-warning-triangle"></span>
+              <div>
+                <div class="ds-alert__title">Action required</div>
+                <p class="ds-alert__description">Your billing method failed. Update your payment info.</p>
+              </div>
+              <button class="btn ds-action ds-action--solid ds-action--xs">Fix</button>
+            </article>
+          </div>
+          <div class="u-stack" style="--u-stack-gap:1rem;">
+            <h3 class="ds-subtitle-2">Progress &amp; Loader</h3>
+            <div>
+              <div class="ds-progress" data-variant="success">
+                <div class="ds-progress__bar" style="width:68%;"></div>
+              </div>
+              <p class="ds-field__helper mt-2">Campaign setup 68% complete</p>
+            </div>
+            <div class="demo-panel">
+              <div class="ds-loader" role="status" aria-label="Loading"></div>
+            </div>
+            <div class="demo-panel" data-tooltip>
+              <button class="btn ds-action ds-action--ghost ds-action--sm demo-tooltip-trigger">
+                Hover me
+                <span class="ds-tooltip">Tooltip text with helper info</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="surfaces">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Surfaces &amp; Data Display</h2>
+          <span class="ds-status" data-tone="soft" data-variant="warning">Surface</span>
+        </div>
+        <div class="ds-grid" data-columns="3">
+          <article class="ds-surface ds-card">
+            <div class="ds-card__header">
+              <div>
+                <div class="ds-card__title">Monthly Revenue</div>
+                <div class="ds-card__meta">Updated 1 hour ago</div>
+              </div>
+              <button class="btn ds-action ds-action--ghost ds-action--xs ds-action--icon-only"><span class="ds-icon iconoir-more-horiz"></span></button>
+            </div>
+            <p class="ds-body-2">Revenue has increased by 12% compared to last month. Keep up the momentum!</p>
+            <div class="ds-progress">
+              <div class="ds-progress__bar" style="width:82%;"></div>
+            </div>
+          </article>
+          <div class="ds-list">
+            <div class="ds-list__item">
+              <div>
+                <strong>Invite new member</strong>
+                <div class="ds-list__meta">Send them a welcome email</div>
+              </div>
+              <button class="btn ds-action ds-action--outline ds-action--xs">Invite</button>
+            </div>
+            <div class="ds-list__item">
+              <div>
+                <strong>Sync calendar</strong>
+                <div class="ds-list__meta">Allow access to meeting slots</div>
+              </div>
+              <button class="btn ds-action ds-action--ghost ds-action--xs">Sync</button>
+            </div>
+            <div class="ds-list__item">
+              <div>
+                <strong>Export analytics</strong>
+                <div class="ds-list__meta">Download a CSV summary</div>
+              </div>
+              <button class="btn ds-action ds-action--ghost ds-action--xs">Export</button>
+            </div>
+          </div>
+          <div class="u-stack" style="--u-stack-gap:1rem;">
+            <div class="u-cluster">
+              <span class="ds-avatar" data-size="sm">LT</span>
+              <span class="ds-avatar">RA</span>
+              <span class="ds-avatar" data-size="lg">MG</span>
+            </div>
+            <div class="ds-avatar-stack">
+              <span class="ds-avatar" data-size="sm">AA</span>
+              <span class="ds-avatar" data-size="sm">BB</span>
+              <span class="ds-avatar" data-size="sm">CC</span>
+              <span class="ds-avatar" data-size="sm">+4</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="navigation">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Navigation</h2>
+          <span class="ds-status" data-tone="soft" data-variant="info">Travel</span>
+        </div>
+        <div class="u-stack" style="--u-stack-gap:1.5rem;">
+          <nav class="ds-navbar">
+            <div class="u-inline">
+              <span class="ds-icon iconoir-triangle"></span>
+              <span class="ds-subtitle-2">Orbital</span>
+            </div>
+            <div class="ds-navbar__actions">
+              <a href="#" class="ds-action ds-action--ghost ds-action--sm">Docs</a>
+              <a href="#" class="ds-action ds-action--ghost ds-action--sm">Pricing</a>
+              <button class="btn ds-action ds-action--solid ds-action--sm">Get Started</button>
+            </div>
+          </nav>
+          <div class="ds-stepper">
+            <div class="ds-stepper__item is-complete">
+              <span class="ds-stepper__indicator"><i class="iconoir-check"></i></span>
+              <div class="ds-stepper__label">Account</div>
+              <div class="ds-stepper__description">Create your workspace</div>
+            </div>
+            <div class="ds-stepper__item is-active">
+              <span class="ds-stepper__indicator">2</span>
+              <div class="ds-stepper__label">Profile</div>
+              <div class="ds-stepper__description">Add team members</div>
+            </div>
+            <div class="ds-stepper__item">
+              <span class="ds-stepper__indicator">3</span>
+              <div class="ds-stepper__label">Launch</div>
+              <div class="ds-stepper__description">Publish integrations</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="overlays">
+        <div class="ds-section__header">
+          <h2 class="ds-section__title">Overlay &amp; Menus</h2>
+          <span class="ds-status" data-tone="soft" data-variant="danger">Overlay</span>
+        </div>
+        <div class="ds-grid" data-columns="2">
+          <div class="u-stack" style="--u-stack-gap:1rem;">
+            <div class="ds-overlay-backdrop" style="position:relative; inset:auto; background:rgba(19,25,39,0.08); box-shadow: inset 0 0 0 1px var(--ds-grey-200);">
+              <article class="ds-modal" role="dialog" aria-modal="true">
+                <header class="ds-modal__header u-inline" style="justify-content:space-between;">
+                  <div>
+                    <div class="ds-subtitle-2 mb-1">Invite teammate</div>
+                    <p class="ds-field__helper mb-0">Send a link to join your workspace.</p>
+                  </div>
+                  <button class="btn ds-action ds-action--ghost ds-action--xs ds-action--icon-only" aria-label="Close"><span class="ds-icon iconoir-xmark"></span></button>
+                </header>
+                <div class="ds-modal__body">
+                  <div class="ds-field">
+                    <label class="ds-field__label" for="invite-email">Email</label>
+                    <div class="ds-control">
+                      <input class="ds-control__input" type="email" id="invite-email" value="stephanie@orbital.dev" />
+                    </div>
+                  </div>
+                  <div class="ds-field">
+                    <label class="ds-field__label" for="invite-role">Role</label>
+                    <div class="ds-control ds-control--select">
+                      <select class="form-select border-0 ps-0 ds-control__input" id="invite-role">
+                        <option selected>Admin</option>
+                        <option>Editor</option>
+                        <option>Viewer</option>
+                      </select>
+                      <span class="ds-control__trailing"><i class="iconoir-nav-arrow-down"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <footer class="ds-modal__footer">
+                  <button class="btn ds-action ds-action--ghost ds-action--sm">Cancel</button>
+                  <button class="btn ds-action ds-action--solid ds-action--sm">Send Invite</button>
+                </footer>
+              </article>
+            </div>
+          </div>
+          <div class="u-stack" style="--u-stack-gap:1.5rem;">
+            <div class="ds-dropdown">
+              <button class="btn ds-action ds-action--outline ds-action--sm">Quick actions <span class="ds-icon iconoir-nav-arrow-down"></span></button>
+              <div class="ds-dropdown__panel">
+                <div class="ds-menu">
+                  <button class="ds-menu__item">
+                    <span class="ds-icon iconoir-send"></span>
+                    <span>Share</span>
+                    <span class="ds-menu__shortcut">⌘ + K</span>
+                  </button>
+                  <button class="ds-menu__item is-active">
+                    <span class="ds-icon iconoir-edit"></span>
+                    <span>Edit</span>
+                    <span class="ds-menu__shortcut">E</span>
+                  </button>
+                  <button class="ds-menu__item" aria-disabled="true">
+                    <span class="ds-icon iconoir-trash"></span>
+                    <span>Delete</span>
+                    <span class="ds-menu__shortcut">⌘ + ⌫</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ds-action-sheet">
+              <div class="ds-action-sheet__handle"></div>
+              <button class="ds-menu__item">
+                <span class="ds-icon iconoir-download"></span>
+                <span>Download Report</span>
+                <span class="ds-menu__shortcut">15 MB</span>
+              </button>
+              <button class="ds-menu__item">
+                <span class="ds-icon iconoir-share-ios"></span>
+                <span>Share via link</span>
+                <span class="ds-menu__shortcut">Public</span>
+              </button>
+              <button class="ds-menu__item">
+                <span class="ds-icon iconoir-shield-check"></span>
+                <span>Manage permissions</span>
+                <span class="ds-menu__shortcut">4 users</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Built with Bootstrap 5 and Iconoir — design tokens applied through modular CSS architecture.
+      </footer>
+    </div>
+  </body>
+</html>
