@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi - QUICK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/iconoir@6.7.0/css/iconoir.css"
+    />
+    <link rel="stylesheet" href="styles/design-system.bundle.css" />
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg mt-3 navbar-ds">
+      <div class="container-xxl">
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn d-lg-none p-2 me-1 btn-icon" type="button" aria-label="Menu" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+            <img src="images/icons/menu.svg" alt="menu" width="28" height="28" />
+          </button>
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="images/assets/logo.png" alt="Quick" class="brand-img-32" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#topnav"
+          aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Mobile right actions -->
+        <div class="d-flex align-items-center gap-3 ms-auto d-lg-none">
+          <div class="bell-container">
+            <img src="images/icons/bell.svg" alt="notif" width="22" height="22" />
+            <span class="bell-dot"></span>
+          </div>
+          <div class="user-pill">
+            <span class="fw-medium text-ds-grey-800">Kurnia</span>
+            <div class="position-relative">
+              <img src="images/assets/avatar.png" alt="Kurnia" class="avatar-36 rounded-circle" />
+              <span class="status-dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="topnav">
+          <ul class="navbar-nav mx-auto my-2 my-lg-0 align-items-lg-center d-none d-lg-flex chips">
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-400), var(--ds-primary-600)); color: var(--ds-white-100);">
+                <img src="images/icons/home.svg" alt="Beranda" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Beranda</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/book.svg" alt="Materi" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Materi</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/diploma.svg" alt="Pre Test" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Pre Test</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/document-add.svg" alt="Quiz" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Quiz</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/pc-check.svg" alt="Try Out" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Try Out</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/crown.svg" alt="Peringkat" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Peringkat</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/documents.svg" alt="Bimbel Saya" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Bimbel Saya</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
+                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+                <img src="images/icons/fallback-icon.svg" alt="Upgrade Paket" width="18" height="18" />
+                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Upgrade Paket</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center"
+              style="width: 48px; height: 48px; border-radius: var(--ds-radius-pill); background: var(--ds-grey-50); box-shadow: var(--ds-shadow-100);">
+              <img src="images/icons/bell.svg" alt="notif" width="22" height="22" />
+              <span class="position-absolute"
+                style="top:6px; right:6px; width:12px; height:12px; background: var(--ds-red-500); border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill);"></span>
+            </div>
+            <div class="position-relative d-flex align-items-center gap-2"
+              style="padding: 8px 12px; background: var(--ds-primary-50); border-radius: var(--ds-radius-pill);">
+              <span class="fw-medium" style="color: var(--ds-grey-800);">Kurnia</span>
+              <div class="position-relative">
+                <img src="images/assets/avatar.png" alt="Kurnia" width="36" height="36" class="rounded-circle"
+                  style="border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill);" />
+                <span class="position-absolute"
+                  style="bottom:-1px; right:-1px; width:10px; height:10px; background: var(--ds-green-500); border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill);"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="container-xxl my-3 my-lg-4">
+      <div class="row g-3 g-lg-4">
+        <!-- Left sidebar (desktop) -->
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="sidebar-card noborder sidebar-stretch position-sticky" style="top: 24px">
+            <div class="accordion sidebar-scroll" id="subjectAccordion">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-white shadow-sm"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#wajib"
+                    aria-expanded="true"
+                    aria-controls="wajib"
+                  >
+                    <span class="sidebar-title">Mata Pelajaran Wajib</span>
+                  </button>
+                </h2>
+                <div
+                  id="wajib"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#subjectAccordion"
+                >
+                  <div class="accordion-body p-2">
+                    <div
+                      class="sidebar-item noborder active"
+                      aria-current="true"
+                    >
+                      <img
+                        src="images/icons/book.svg"
+                        width="18"
+                        height="18"
+                        alt="Matematika"
+                      /><span>Matematika</span>
+                    </div>
+                    <div class="sidebar-item noborder disabled">
+                      <img
+                        src="images/icons/book.svg"
+                        width="18"
+                        height="18"
+                        alt="Bahasa Indonesia"
+                      /><span>Bahasa Indonesia</span>
+                    </div>
+                    <div class="sidebar-item noborder disabled">
+                      <img
+                        src="images/icons/book.svg"
+                        width="18"
+                        height="18"
+                        alt="Bahasa Inggris"
+                      /><span>Bahasa Inggris</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mt-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-white shadow-sm collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#pilihan"
+                    aria-expanded="true"
+                    aria-controls="pilihan"
+                  >
+                    <span class="sidebar-title">Mata Pelajaran Pilihan</span>
+                  </button>
+                </h2>
+                <div
+                  id="pilihan"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#subjectAccordion"
+                >
+                  <div class="accordion-body p-2">
+                    <div class="sidebar-item noborder">
+                      <img
+                        src="images/icons/book.svg"
+                        width="18"
+                        height="18"
+                        alt="Matematika Tingkat Lanjut"
+                      /><span>Matematika Tingkat Lanjut</span>
+                    </div>
+                    <div class="sidebar-item noborder">
+                      <img
+                        src="images/icons/book.svg"
+                        width="18"
+                        height="18"
+                        alt="Fisika"
+                      /><span>Fisika</span>
+                    </div>
+                    <div class="sidebar-item noborder">
+                      <img
+                        src="images/icons/book.svg"
+                        width="18"
+                        height="18"
+                        alt="Kimia"
+                      /><span>Kimia</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right content -->
+        <section class="col-lg-9">
+          <div class="card-surface p-3 p-md-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="h6 mb-0 text-ds-grey-800">Matematika</h2>
+              <div class="d-flex align-items-center gap-2">
+                <button
+                  class="btn pill-muted"
+                  type="button"
+                  aria-label="List view"
+                >
+                  <img
+                    src="images/icons/fallback-icon.svg"
+                    width="16"
+                    height="16"
+                    alt="list"
+                  />
+                </button>
+                <button
+                  class="btn pill-muted"
+                  type="button"
+                  aria-label="Grid view"
+                >
+                  <img
+                    src="images/icons/fallback-icon.svg"
+                    width="16"
+                    height="16"
+                    alt="grid"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="vstack gap-2">
+              <div class="media-row">
+                <img
+                  src="images/elements/Card.jpg"
+                  alt="thumb"
+                  class="media-thumb"
+                />
+                <div class="flex-grow-1">
+                  <div class="media-title">01. Bilangan</div>
+                  <div class="media-sub">(Materi Verbal)</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="action-btn" type="button" aria-label="Video">
+                    <img
+                      src="images/icons/pc-check.svg"
+                      width="16"
+                      height="16"
+                      alt="play"
+                    />Video
+                  </button>
+                  <button class="action-btn" type="button" aria-label="PDF">
+                    <img
+                      src="images/icons/documents.svg"
+                      width="16"
+                      height="16"
+                      alt="pdf"
+                    />PDF
+                  </button>
+                </div>
+              </div>
+
+              <div class="media-row">
+                <img
+                  src="images/elements/Card.jpg"
+                  alt="thumb"
+                  class="media-thumb"
+                />
+                <div class="flex-grow-1">
+                  <div class="media-title">02. Aljabar</div>
+                  <div class="media-sub">(Materi Verbal)</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="action-btn" type="button" aria-label="Video">
+                    <img
+                      src="images/icons/pc-check.svg"
+                      width="16"
+                      height="16"
+                      alt="play"
+                    />Video
+                  </button>
+                  <button class="action-btn" type="button" aria-label="PDF">
+                    <img
+                      src="images/icons/documents.svg"
+                      width="16"
+                      height="16"
+                      alt="pdf"
+                    />PDF
+                  </button>
+                </div>
+              </div>
+
+              <div class="media-row">
+                <img
+                  src="images/elements/Card.jpg"
+                  alt="thumb"
+                  class="media-thumb"
+                />
+                <div class="flex-grow-1">
+                  <div class="media-title">03. Geometri dan Pengukuran</div>
+                  <div class="media-sub">(Materi Penalaran)</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="action-btn" type="button" aria-label="Video">
+                    <img
+                      src="images/icons/pc-check.svg"
+                      width="16"
+                      height="16"
+                      alt="play"
+                    />Video
+                  </button>
+                  <button class="action-btn" type="button" aria-label="PDF">
+                    <img
+                      src="images/icons/documents.svg"
+                      width="16"
+                      height="16"
+                      alt="pdf"
+                    />PDF
+                  </button>
+                </div>
+              </div>
+
+              <div class="media-row">
+                <img
+                  src="images/elements/Card.jpg"
+                  alt="thumb"
+                  class="media-thumb"
+                />
+                <div class="flex-grow-1">
+                  <div class="media-title">04. Data dan Peluang</div>
+                  <div class="media-sub">(Materi Penalaran)</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="action-btn" type="button" aria-label="Video">
+                    <img
+                      src="images/icons/pc-check.svg"
+                      width="16"
+                      height="16"
+                      alt="play"
+                    />Video
+                  </button>
+                  <button class="action-btn" type="button" aria-label="PDF">
+                    <img
+                      src="images/icons/documents.svg"
+                      width="16"
+                      height="16"
+                      alt="pdf"
+                    />PDF
+                  </button>
+                </div>
+              </div>
+
+              <div class="media-row">
+                <img
+                  src="images/elements/Card.jpg"
+                  alt="thumb"
+                  class="media-thumb"
+                />
+                <div class="flex-grow-1">
+                  <div class="media-title">05. Trigonometri</div>
+                  <div class="media-sub">(Materi Numerik)</div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="action-btn" type="button" aria-label="Video">
+                    <img
+                      src="images/icons/pc-check.svg"
+                      width="16"
+                      height="16"
+                      alt="play"
+                    />Video
+                  </button>
+                  <button class="action-btn" type="button" aria-label="PDF">
+                    <img
+                      src="images/icons/documents.svg"
+                      width="16"
+                      height="16"
+                      alt="pdf"
+                    />PDF
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Offcanvas Sidebar -->
+    <div
+      class="offcanvas offcanvas-start offcanvas-ds"
+      tabindex="-1"
+      id="offcanvasNav"
+      aria-labelledby="offcanvasNavLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-2">
+          <img src="images/assets/logo.png" alt="Quick" height="32" />
+        </div>
+        <button
+          type="button"
+          class="btn"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img
+            src="images/icons/fallback-icon.svg"
+            width="20"
+            height="20"
+            alt="close"
+          />
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="vstack gap-3">
+          <a href="#" class="sidebar-link sidebar-link-active"
+            ><img
+              src="images/icons/home.svg"
+              width="20"
+              height="20"
+              alt="Beranda"
+            /><span>Beranda</span></a
+          >
+          <a href="#" class="sidebar-link"
+            ><img
+              src="images/icons/book.svg"
+              width="20"
+              height="20"
+              alt="Materi"
+            /><span>Materi</span></a
+          >
+          <a href="#" class="sidebar-link"
+            ><img
+              src="images/icons/diploma.svg"
+              width="20"
+              height="20"
+              alt="Pre Test"
+            /><span>Pre Test</span></a
+          >
+          <a href="#" class="sidebar-link"
+            ><img
+              src="images/icons/document-add.svg"
+              width="20"
+              height="20"
+              alt="Quiz"
+            /><span>Quiz</span></a
+          >
+          <a href="#" class="sidebar-link"
+            ><img
+              src="images/icons/pc-check.svg"
+              width="20"
+              height="20"
+              alt="Try Out"
+            /><span>Try Out</span></a
+          >
+          <a href="#" class="sidebar-link"
+            ><img
+              src="images/icons/crown.svg"
+              width="20"
+              height="20"
+              alt="Peringkat"
+            /><span>Peringkat</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
