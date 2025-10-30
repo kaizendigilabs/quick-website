@@ -1,0 +1,38 @@
+:root {
+  --ds-heading-1-size: 48px;
+  --ds-heading-2-size: 40px;
+  --ds-heading-3-size: 32px;
+  --ds-heading-4-size: 28px;
+  --ds-heading-5-size: 24px;
+  --ds-subtitle-1-size: 18px;
+  --ds-subtitle-2-size: 16px;
+  --ds-body-1-size: 16px;
+  --ds-body-2-size: 16px;
+  --ds-body-3-size: 14px;
+  --ds-body-4-size: 14px;
+  --ds-caption-1-size: 12px;
+  --ds-caption-2-size: 12px;
+  --ds-caption-3-size: 10px;
+}
+
+.ds-h1 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-heading-1-size); line-height: 58px; letter-spacing: var(--ds-letter-spacing-tight); }
+.ds-h2 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-heading-2-size); line-height: 48px; letter-spacing: var(--ds-letter-spacing-tight); }
+.ds-h3 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-heading-3-size); line-height: 38px; letter-spacing: var(--ds-letter-spacing-tight); }
+.ds-h4 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-heading-4-size); line-height: 34px; letter-spacing: var(--ds-letter-spacing-tight); }
+.ds-h5 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-heading-5-size); line-height: 28px; letter-spacing: var(--ds-letter-spacing-tight); }
+
+.ds-subtitle-1 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-subtitle-1-size); line-height: 28px; }
+.ds-subtitle-2 { font-weight: var(--ds-font-weight-semibold); font-size: var(--ds-subtitle-2-size); line-height: 24px; }
+
+.ds-body-1 { font-weight: var(--ds-font-weight-regular); font-size: var(--ds-body-1-size); line-height: 24px; }
+.ds-body-2 { font-weight: var(--ds-font-weight-medium); font-size: var(--ds-body-2-size); line-height: 24px; }
+.ds-body-3 { font-weight: var(--ds-font-weight-regular); font-size: var(--ds-body-3-size); line-height: 20px; }
+.ds-body-4 { font-weight: var(--ds-font-weight-medium); font-size: var(--ds-body-4-size); line-height: 20px; }
+
+.ds-caption-1 { font-weight: var(--ds-font-weight-regular); font-size: var(--ds-caption-1-size); line-height: 16px; }
+.ds-caption-2 { font-weight: var(--ds-font-weight-medium); font-size: var(--ds-caption-2-size); line-height: 16px; }
+.ds-caption-3 { font-weight: var(--ds-font-weight-medium); font-size: var(--ds-caption-3-size); line-height: 14px; }
+
+.ds-label { font-weight: var(--ds-font-weight-medium); font-size: 12px; line-height: 16px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+.lead { font-size: 18px; font-weight: var(--ds-font-weight-medium); line-height: 28px; color: var(--ds-grey-700); }
