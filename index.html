@@ -14,15 +14,15 @@
 
 <body>
   <div class="container">
-    <nav class="navbar navbar-expand-lg mt-3 navbar-ds">
+    <nav class="navbar navbar-expand-lg mt-3 bg-white border rounded shadow-sm">
       <div class="container-xxl">
         <div class="d-flex align-items-center gap-2">
-          <button class="btn d-lg-none p-2 me-1 btn-icon" type="button" aria-label="Menu" data-bs-toggle="offcanvas"
+          <button class="btn d-lg-none p-2 me-1" type="button" aria-label="Menu" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
             <img src="images/icons/menu.svg" alt="menu" width="28" height="28" />
           </button>
           <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src="images/assets/logo.png" alt="Quick" class="brand-img-32" />
+            <img src="images/assets/logo.png" alt="Quick" height="32" />
           </a>
         </div>
 
@@ -33,94 +33,85 @@
 
         <!-- Mobile right actions -->
         <div class="d-flex align-items-center gap-3 ms-auto d-lg-none">
-          <div class="bell-container">
+          <div class="position-relative d-flex align-items-center justify-content-center rounded-circle bg-light shadow-sm p-2">
             <img src="images/icons/bell.svg" alt="notif" width="22" height="22" />
-            <span class="bell-dot"></span>
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
           </div>
-          <div class="user-pill">
-            <span class="fw-medium text-ds-grey-800">Kurnia</span>
+          <div class="d-flex align-items-center gap-2 bg-primary-subtle rounded-pill px-3 py-2">
+            <span class="fw-medium text-dark">Kurnia</span>
             <div class="position-relative">
-              <img src="images/assets/avatar.png" alt="Kurnia" class="avatar-36 rounded-circle" />
-              <span class="status-dot"></span>
+              <img src="images/assets/avatar.png" alt="Kurnia" width="36" height="36" class="rounded-circle border border-white" />
+              <span
+                class="position-absolute bottom-0 end-0 translate-middle p-1 bg-success border border-white rounded-circle"></span>
             </div>
           </div>
         </div>
 
         <div class="collapse navbar-collapse" id="topnav">
-          <ul class="navbar-nav mx-auto my-2 my-lg-0 align-items-lg-center d-none d-lg-flex chips">
+          <ul class="navbar-nav mx-auto my-2 my-lg-0 align-items-lg-center d-none d-lg-flex gap-2">
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-400), var(--ds-primary-600)); color: var(--ds-white-100);">
+              <a class="btn btn-primary btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/home.svg" alt="Beranda" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Beranda</span>
+                <span>Beranda</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/book.svg" alt="Materi" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Materi</span>
+                <span>Materi</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/diploma.svg" alt="Pre Test" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Pre Test</span>
+                <span>Pre Test</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/document-add.svg" alt="Quiz" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Quiz</span>
+                <span>Quiz</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/pc-check.svg" alt="Try Out" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Try Out</span>
+                <span>Try Out</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/crown.svg" alt="Peringkat" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Peringkat</span>
+                <span>Peringkat</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/documents.svg" alt="Bimbel Saya" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Bimbel Saya</span>
+                <span>Bimbel Saya</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="d-flex align-items-center gap-2 text-decoration-none" href="#"
-                style="padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+              <a class="btn btn-light btn-sm d-inline-flex align-items-center gap-2" href="#">
                 <img src="images/icons/fallback-icon.svg" alt="Upgrade Paket" width="18" height="18" />
-                <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Upgrade Paket</span>
+                <span>Upgrade Paket</span>
               </a>
             </li>
           </ul>
 
           <div class="d-flex align-items-center gap-3">
-            <div class="position-relative d-flex align-items-center justify-content-center"
-              style="width: 48px; height: 48px; border-radius: var(--ds-radius-pill); background: var(--ds-grey-50); box-shadow: var(--ds-shadow-100);">
+          <div class="position-relative d-flex align-items-center justify-content-center rounded-circle bg-light shadow-sm p-2">
               <img src="images/icons/bell.svg" alt="notif" width="22" height="22" />
-              <span class="position-absolute"
-                style="top:6px; right:6px; width:12px; height:12px; background: var(--ds-red-500); border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill);"></span>
+              <span
+                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
             </div>
-            <div class="position-relative d-flex align-items-center gap-2"
-              style="padding: 8px 12px; background: var(--ds-primary-50); border-radius: var(--ds-radius-pill);">
-              <span class="fw-medium" style="color: var(--ds-grey-800);">Kurnia</span>
+            <div class="d-flex align-items-center gap-2 bg-primary-subtle rounded-pill px-3 py-2">
+              <span class="fw-medium text-dark">Kurnia</span>
               <div class="position-relative">
-                <img src="images/assets/avatar.png" alt="Kurnia" width="36" height="36" class="rounded-circle"
-                  style="border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill);" />
-                <span class="position-absolute"
-                  style="bottom:-1px; right:-1px; width:10px; height:10px; background: var(--ds-green-500); border: 2px solid var(--ds-white-100); border-radius: var(--ds-radius-pill);"></span>
+                <img src="images/assets/avatar.png" alt="Kurnia" width="36" height="36" class="rounded-circle border border-white" />
+                <span
+                  class="position-absolute bottom-0 end-0 translate-middle p-1 bg-success border border-white rounded-circle"></span>
               </div>
             </div>
           </div>
@@ -130,8 +121,7 @@
   </div>
 
   <!-- Mobile Sidebar / Offcanvas -->
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel"
-    style="width: 85vw; background: var(--ds-white-100); border-right: 1px solid var(--ds-grey-200); border-radius: 0 var(--ds-radius-lg) var(--ds-radius-lg) 0; box-shadow: var(--ds-shadow-400);">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
     <div class="offcanvas-header">
       <div class="d-flex align-items-center gap-2">
         <img src="images/assets/logo.png" alt="Quick" height="32" />
@@ -141,89 +131,75 @@
       </button>
     </div>
     <div class="offcanvas-body">
-      <div class="vstack gap-3">
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-400), var(--ds-primary-600)); color: var(--ds-white-100);">
+      <div class="vstack gap-2">
+        <a href="#" class="btn btn-primary d-flex align-items-center gap-2">
           <img src="images/icons/home.svg" width="20" height="20" alt="Beranda" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Beranda</span>
+          <span>Beranda</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/book.svg" width="20" height="20" alt="Materi" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Materi</span>
+          <span>Materi</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/diploma.svg" width="20" height="20" alt="Pre Test" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Pre Test</span>
+          <span>Pre Test</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/document-add.svg" width="20" height="20" alt="Quiz" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Quiz</span>
+          <span>Quiz</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/pc-check.svg" width="20" height="20" alt="Try Out" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Try Out</span>
+          <span>Try Out</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/crown.svg" width="20" height="20" alt="Peringkat" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Peringkat</span>
+          <span>Peringkat</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/documents.svg" width="20" height="20" alt="Bimbel Saya" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Bimbel Saya</span>
+          <span>Bimbel Saya</span>
         </a>
-        <a href="#" class="d-flex align-items-center gap-2"
-          style="height:56px; padding:10px 14px; border-radius: var(--ds-radius-md); background: var(--ds-white-100); color: var(--ds-grey-800);">
+        <a href="#" class="btn btn-light d-flex align-items-center gap-2">
           <img src="images/icons/fallback-icon.svg" width="20" height="20" alt="Upgrade Paket" />
-          <span style="font-weight: var(--ds-fw-medium); font-size: var(--ds-body-3-size);">Upgrade Paket</span>
+          <span>Upgrade Paket</span>
         </a>
       </div>
     </div>
   </div>
 
   <main class="container-xxl my-3 my-lg-4">
-    <header class="p-3 p-md-4 mb-3 mb-lg-4"
-      style="background: var(--ds-white-100); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200);">
-      <h1 class="h4 mb-1" style="color: var(--ds-grey-900);">Halo, Selamat Datang 👋</h1>
-      <p class="mb-0" style="color: var(--ds-grey-500);">Tes Kemampuan Akademik (TKA) Jenjang SMA/MA/SMK</p>
+    <header class="bg-white border rounded shadow-sm p-3 p-md-4 mb-3 mb-lg-4">
+      <h1 class="h4 mb-1 text-dark">Halo, Selamat Datang 👋</h1>
+      <p class="mb-0 text-secondary">Tes Kemampuan Akademik (TKA) Jenjang SMA/MA/SMK</p>
     </header>
 
     <div class="row g-3 g-lg-4">
       <div class="col-lg-7">
-        <section class="card border-0 overflow-hidden mb-3"
-          style="border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200);">
-          <div class="position-relative bg-dark-subtle" style="aspect-ratio: 16/9;">
-            <button class="btn position-absolute top-50 start-50 translate-middle" type="button" aria-label="Play"
-              style="width: 64px; height: 64px; background: var(--ds-white-100); border-radius: var(--ds-radius-pill); box-shadow: var(--ds-shadow-200);">
-              ▶
-            </button>
+        <section class="bg-white border rounded shadow-sm overflow-hidden mb-3">
+          <div class="ratio ratio-16x9 position-relative bg-dark-subtle">
+            <button class="btn btn-light shadow position-absolute top-50 start-50 translate-middle" type="button"
+              aria-label="Play">▶</button>
           </div>
         </section>
 
-        <section class="p-3 p-md-4"
-          style="background: var(--ds-white-100); border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200);">
+        <section class="bg-white border rounded shadow-sm p-3 p-md-4">
           <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="d-flex align-items-center gap-2">
               <img src="images/icons/documents.svg" alt="materi" width="22" height="22" />
-              <h2 class="h6 mb-0" style="color: var(--ds-grey-800);">Akses Materimu Disini</h2>
+              <h2 class="h6 mb-0 text-dark">Akses Materimu Disini</h2>
             </div>
-            <a href="#" class="text-decoration-none" style="color: var(--ds-primary-700);">Semua Materi</a>
+            <a href="#" class="link-primary text-decoration-none">Semua Materi</a>
           </div>
 
           <div class="vstack gap-2">
             <!-- 6 list items -->
-            <div class="d-flex align-items-center gap-3 p-2"
-              style="border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md);">
+            <div class="d-flex align-items-center gap-3 p-2 border rounded-3">
               <img src="images/elements/Card.jpg" alt="thumb" width="48" height="48"
                 class="rounded-2 object-fit-cover" />
               <div class="flex-grow-1">
-                <div class="fw-semibold" style="color: var(--ds-grey-800);">Materi Test Kecerdasan Umum</div>
-                <div class="small d-flex gap-3" style="color: var(--ds-grey-500);">
+                <div class="fw-semibold text-dark">Materi Test Kecerdasan Umum</div>
+                <div class="small d-flex gap-3 text-secondary">
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/document-add.svg"
                       alt="soal" width="14" height="14" />110 Soal</span>
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/pc-check.svg" alt="menit"
@@ -231,13 +207,12 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3 p-2"
-              style="border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md);">
+            <div class="d-flex align-items-center gap-3 p-2 border rounded-3">
               <img src="images/elements/Card.jpg" alt="thumb" width="48" height="48"
                 class="rounded-2 object-fit-cover" />
               <div class="flex-grow-1">
-                <div class="fw-semibold" style="color: var(--ds-grey-800);">Materi Test Kecerdasan Umum</div>
-                <div class="small d-flex gap-3" style="color: var(--ds-grey-500);">
+                <div class="fw-semibold text-dark">Materi Test Kecerdasan Umum</div>
+                <div class="small d-flex gap-3 text-secondary">
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/document-add.svg"
                       alt="soal" width="14" height="14" />110 Soal</span>
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/pc-check.svg" alt="menit"
@@ -245,13 +220,12 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3 p-2"
-              style="border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md);">
+            <div class="d-flex align-items-center gap-3 p-2 border rounded-3">
               <img src="images/elements/Card.jpg" alt="thumb" width="48" height="48"
                 class="rounded-2 object-fit-cover" />
               <div class="flex-grow-1">
-                <div class="fw-semibold" style="color: var(--ds-grey-800);">Materi Test Kecerdasan Umum</div>
-                <div class="small d-flex gap-3" style="color: var(--ds-grey-500);">
+                <div class="fw-semibold text-dark">Materi Test Kecerdasan Umum</div>
+                <div class="small d-flex gap-3 text-secondary">
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/document-add.svg"
                       alt="soal" width="14" height="14" />110 Soal</span>
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/pc-check.svg" alt="menit"
@@ -259,13 +233,12 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3 p-2"
-              style="border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md);">
+            <div class="d-flex align-items-center gap-3 p-2 border rounded-3">
               <img src="images/elements/Card.jpg" alt="thumb" width="48" height="48"
                 class="rounded-2 object-fit-cover" />
               <div class="flex-grow-1">
-                <div class="fw-semibold" style="color: var(--ds-grey-800);">Materi Test Kecerdasan Umum</div>
-                <div class="small d-flex gap-3" style="color: var(--ds-grey-500);">
+                <div class="fw-semibold text-dark">Materi Test Kecerdasan Umum</div>
+                <div class="small d-flex gap-3 text-secondary">
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/document-add.svg"
                       alt="soal" width="14" height="14" />110 Soal</span>
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/pc-check.svg" alt="menit"
@@ -273,13 +246,12 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3 p-2"
-              style="border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md);">
+            <div class="d-flex align-items-center gap-3 p-2 border rounded-3">
               <img src="images/elements/Card.jpg" alt="thumb" width="48" height="48"
                 class="rounded-2 object-fit-cover" />
               <div class="flex-grow-1">
-                <div class="fw-semibold" style="color: var(--ds-grey-800);">Materi Test Kecerdasan Umum</div>
-                <div class="small d-flex gap-3" style="color: var(--ds-grey-500);">
+                <div class="fw-semibold text-dark">Materi Test Kecerdasan Umum</div>
+                <div class="small d-flex gap-3 text-secondary">
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/document-add.svg"
                       alt="soal" width="14" height="14" />110 Soal</span>
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/pc-check.svg" alt="menit"
@@ -287,13 +259,12 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3 p-2"
-              style="border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-md);">
+            <div class="d-flex align-items-center gap-3 p-2 border rounded-3">
               <img src="images/elements/Card.jpg" alt="thumb" width="48" height="48"
                 class="rounded-2 object-fit-cover" />
               <div class="flex-grow-1">
-                <div class="fw-semibold" style="color: var(--ds-grey-800);">Materi Test Kecerdasan Umum</div>
-                <div class="small d-flex gap-3" style="color: var(--ds-grey-500);">
+                <div class="fw-semibold text-dark">Materi Test Kecerdasan Umum</div>
+                <div class="small d-flex gap-3 text-secondary">
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/document-add.svg"
                       alt="soal" width="14" height="14" />110 Soal</span>
                   <span class="d-inline-flex align-items-center gap-1"><img src="images/icons/pc-check.svg" alt="menit"
@@ -306,73 +277,47 @@
       </div>
 
       <div class="col-lg-5">
-        <section class="p-3 p-md-4 mb-3"
-          style="background: var(--ds-white-100); border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200);">
+        <section class="bg-white border rounded shadow-sm p-3 p-md-4 mb-3">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="images/icons/pc-check.svg" alt="nilai" width="20" height="20" />
-            <h2 class="h6 mb-0" style="color: var(--ds-grey-800);">Nilai Pre-Test</h2>
+            <h2 class="h6 mb-0 text-dark">Nilai Pre-Test</h2>
           </div>
           <div class="vstack gap-2">
-            <div class="d-flex justify-content-between align-items-center px-3 py-2"
-              style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
-              <span style="color: var(--ds-grey-700);">Psikotest</span>
-              <span class="px-3"
-                style="background: var(--ds-primary-100); color: var(--ds-primary-700); border-radius: var(--ds-radius-pill);">15</span>
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-light rounded-3">
+              <span class="text-secondary">Psikotest</span>
+              <span class="badge rounded-pill text-bg-primary px-3">15</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-2"
-              style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
-              <span style="color: var(--ds-grey-700);">Matematika</span>
-              <span class="px-3"
-                style="background: var(--ds-primary-100); color: var(--ds-primary-700); border-radius: var(--ds-radius-pill);">80</span>
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-light rounded-3">
+              <span class="text-secondary">Matematika</span>
+              <span class="badge rounded-pill text-bg-primary px-3">80</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-2"
-              style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
-              <span style="color: var(--ds-grey-700);">Bahasa Indonesia</span>
-              <span class="px-3"
-                style="background: var(--ds-primary-100); color: var(--ds-primary-700); border-radius: var(--ds-radius-pill);">90</span>
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-light rounded-3">
+              <span class="text-secondary">Bahasa Indonesia</span>
+              <span class="badge rounded-pill text-bg-primary px-3">90</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center px-3 py-2"
-              style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
-              <span style="color: var(--ds-grey-700);">Bahasa Inggris</span>
-              <span class="px-3"
-                style="background: var(--ds-primary-100); color: var(--ds-primary-700); border-radius: var(--ds-radius-pill);">100</span>
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-light rounded-3">
+              <span class="text-secondary">Bahasa Inggris</span>
+              <span class="badge rounded-pill text-bg-primary px-3">100</span>
             </div>
           </div>
         </section>
 
-        <section class="p-3 p-md-4 mb-3"
-          style="background: var(--ds-white-100); border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200);">
+        <section class="bg-white border rounded shadow-sm p-3 p-md-4 mb-3">
           <div class="d-flex justify-content-between align-items-center mb-2">
-            <h2 class="h6 mb-0" style="color: var(--ds-grey-800);">Hasil Try Out</h2>
-            <span class="px-3"
-              style="border:1px solid var(--ds-grey-200); background: var(--ds-grey-50); border-radius: var(--ds-radius-pill);">Psikotest</span>
+            <h2 class="h6 mb-0 text-dark">Hasil Try Out</h2>
+            <span class="btn btn-outline-secondary btn-sm rounded-pill">Psikotest</span>
           </div>
           <div class="py-2">
-            <!-- simple static bars to match screenshot proportions -->
-            <div class="d-flex align-items-end justify-content-between gap-2" style="height: 180px;">
-              <div class="w-100"
-                style="height: 75%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-500), var(--ds-primary-200));">
-              </div>
-              <div class="w-100"
-                style="height: 40%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100));">
-              </div>
-              <div class="w-100"
-                style="height: 45%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100));">
-              </div>
-              <div class="w-100"
-                style="height: 50%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100));">
-              </div>
-              <div class="w-100"
-                style="height: 55%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100));">
-              </div>
-              <div class="w-100"
-                style="height: 60%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100));">
-              </div>
-              <div class="w-100"
-                style="height: 65%; border-radius: var(--ds-radius-md); background: linear-gradient(180deg, var(--ds-primary-300), var(--ds-primary-100));">
-              </div>
+            <div class="d-flex align-items-end justify-content-between gap-2 min-vh-25">
+              <div class="w-100 bg-primary bg-gradient rounded-2 h-75"></div>
+              <div class="w-100 bg-primary-subtle rounded-2 h-50"></div>
+              <div class="w-100 bg-primary-subtle rounded-2 h-50"></div>
+              <div class="w-100 bg-primary-subtle rounded-2 h-50"></div>
+              <div class="w-100 bg-primary-subtle rounded-2 h-50"></div>
+              <div class="w-100 bg-primary-subtle rounded-2 h-50"></div>
+              <div class="w-100 bg-primary-subtle rounded-2 h-50"></div>
             </div>
-            <div class="d-flex justify-content-between small mt-2" style="color: var(--ds-grey-500);">
+            <div class="d-flex justify-content-between small mt-2 text-secondary">
               <span>01/10/25</span>
               <span>02/10/25</span>
               <span>03/10/25</span>
@@ -384,13 +329,12 @@
           </div>
         </section>
 
-        <section class="p-3 p-md-4"
-          style="background: var(--ds-white-100); border:1px solid var(--ds-grey-200); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-200);">
+        <section class="bg-white border rounded shadow-sm p-3 p-md-4">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="images/icons/book.svg" alt="info" width="20" height="20" />
-            <h2 class="h6 mb-0" style="color: var(--ds-grey-800);">Informasi Penting</h2>
+            <h2 class="h6 mb-0 text-dark">Informasi Penting</h2>
           </div>
-          <div class="d-flex align-items-center gap-3 mb-2" style="color: var(--ds-grey-400);">
+          <div class="d-flex align-items-center gap-3 mb-2 text-secondary">
             <div class="flex-grow-1">
               <hr class="m-0" />
             </div>
@@ -400,17 +344,17 @@
             </div>
           </div>
           <div class="vstack gap-2">
-            <div class="p-3" style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
+            <div class="p-3 bg-light rounded-3">
               <div class="fw-semibold mb-1">Lorem Ipsum</div>
-              <div class="small" style="color: var(--ds-grey-600);">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="small text-secondary">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
-            <div class="p-3" style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
+            <div class="p-3 bg-light rounded-3">
               <div class="fw-semibold mb-1">Lorem Ipsum</div>
-              <div class="small" style="color: var(--ds-grey-600);">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="small text-secondary">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
-            <div class="p-3" style="background: var(--ds-grey-100); border-radius: var(--ds-radius-md);">
+            <div class="p-3 bg-light rounded-3">
               <div class="fw-semibold mb-1">Lorem Ipsum</div>
-              <div class="small" style="color: var(--ds-grey-600);">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="small text-secondary">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
           </div>
         </section>

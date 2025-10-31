@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: var(--ds-fs-base);
+  font-size: var(--ds-font-size-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
